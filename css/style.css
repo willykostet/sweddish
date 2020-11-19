@@ -1,0 +1,246 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f8f8f8;
+}
+.sign-in {
+  width: 320px;
+  height: 640px;
+  box-shadow: 6px 6px 30px #d1d9e6;
+  position: absolute;
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+}
+.background-circle {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -40%;
+  left: 60%;
+  transform: translateX(-60%);
+  background-color: #ecf0f3;
+  border-radius: 50%;
+}
+.leading {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.ontop-bar {
+  width: 180px;
+  height: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  border-radius: 0 0 20px 20px;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Calibri;
+}
+.title h1 {
+  font-size: 3rem;
+  color: #f8f8f8;
+  margin: 0;
+  letter-spacing: 2px;
+}
+.title p {
+  background-color: rgba(46, 46, 145, 0.4);
+  border-radius: 10px;
+  font-family: Calibri, sans-serif;
+  color: rgb(231, 231, 8);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 10%;
+}
+.span {
+  border-radius: 35%;
+  color: rgb(42, 46, 25);
+  background-position: center;
+  border: 2px solid rgb(255, 230, 0);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJcAAABeCAMAAAAZpnY3AAAAKlBMVEUAaqf+zAD/0QCGk38AZqv/zwAAaKnavUEibaQAaagAY6yEkoDowzGLlXyC7VKqAAAAl0lEQVRoge3XSQ7CMBBE0TZzGO5/XfYkEq4FSku8f4DyW7aroi7X8dn5tmQbv4iLi4uLi4uLi4uLi4uLi4tr77i4uP7RdYq6b7iWbGKuOkY9nmvXK5uYqw5ZK9YY4cJctfFQh7iyuLK4sriyuLK4sriy2rq63oVd7+iu/46u/zQuLi4uLi4uLi4uLi4uLq694+Li4uL60hsT4iI3v5/OtwAAAABJRU5ErkJggg==);
+}
+.buttons {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.sign-button,
+.fb-button {
+  cursor: pointer;
+  color: #171717;
+  width: 230px;
+  height: 42px;
+  margin: 5px 0;
+  font-family: Calibri;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+}
+.sign-button:hover {
+  background-color: rgb(255, 217, 0);
+}
+.fb-button {
+  color: #fff;
+  font-weight: 600;
+  padding-left: 11px;
+  background-color: #3b5998;
+  margin-bottom: 20px;
+}
+.new-button {
+  color: rgba(252, 252, 252, 1);
+  letter-spacing: 1px;
+  font-family: Calibri;
+  font-weight: 600;
+  text-decoration: none;
+}
+button:active {
+  transform: scale(1.03);
+}
+
+.leading {
+  height: 100%;
+  border-radius: 0;
+  box-shadow: 2px 6px 12px #d1d9e6;
+}
+.cancel {
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.12);
+}
+.fa-times {
+  color: #111111;
+}
+.sign-in-page form,
+.sign-up-page form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sign-in-page,
+.sign-up-page {
+  width: 100%;
+  height: 45%;
+}
+.sign-in-page input,
+.sign-up-page input {
+  width: 220px;
+  height: 40px;
+  margin: 5px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  outline: none;
+  color: #191919;
+  border-radius: 10px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.sign-in-page input::placeholder,
+.sign-up-page input::placeholder {
+  letter-spacing: 1px;
+  font-family: Calibri;
+  font-size: 15px;
+}
+.sign-in-page button,
+.sign-up-page button {
+  width: 220px;
+  height: 40px;
+  font-family: Calibri;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.1);
+}
+.sign-in-page input:focus,
+.sign-up-page input:focus {
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+.sign-in-page button:hover,
+.sign-up-page button:hover,
+.sign-in-page button:focus,
+.sign-up-page button:focus {
+  background-color: #068615;
+  color: #fff;
+  transition: all ease 0.3s;
+}
+.sign-in-page,
+.sign-up-page,
+.cancel {
+  display: none;
+}
+.active-sign-in .buttons,
+.active-sign-up .buttons {
+  display: none;
+}
+.active-sign-in .leading,
+.active-sign-up .leading {
+  height: 55%;
+  border-radius: 0 0 50% 50%/0 0 20% 20%;
+  animation: main 0.3s linear;
+}
+.active-sign-in .sign-in-page,
+.active-sign-in .cancel {
+  display: flex;
+}
+.active-sign-up .sign-up-page,
+.active-sign-up .cancel {
+  display: flex;
+}
+.active-sign-in .fa-times,
+.active-sign-up .fa-times {
+  animation: cancel 0.5s;
+}
+@keyframes main {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 55%;
+  }
+}
+@keyframes cancel {
+  0% {
+    opacity: 0;
+    transform: rotate(-190deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0 deg);
+  }
+}

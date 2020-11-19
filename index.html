@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formochka</title>
+    <!-- font-awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="page-main">
+        <section class="sign-in">
+            <div class="leading">
+                <!-- ontop-bar -->
+                <div class="ontop-bar">
+                </div>
+                <!-- title -->
+                <div class="title">
+                    <h1><span class='span'>Swed</span>dish</h1>
+                    <p>här kan du beställa de mest infödda svenska måltiderna</p>
+                </div>
+                <!-- buttuns -->
+                <div class="buttons">
+                    <!-- sign-in -->
+                    <button class="sign-button">Sign In</button>
+                    <!-- facebook -->
+                    <button class="fb-button">Sign In with Facebook</button>
+                    <!-- new-account -->
+                    <a href="#" class="new-button">Vill du registrera dig?</a>
+                </div>
+                <!-- cancellation -->
+                <div class="cancel">
+                    <a href="#"><i class="fas fa-times"></i></a>
+                </div>
+            </div>
+            <!-- signIn-page -->
+            <div class="sign-in-page">
+              <form>
+                <!-- email -->
+                <input type="email" placeholder="Email"/>
+                <!-- password -->
+                <input type="password" placeholder="Password"/>
+                <button>Sign In</button>
+              </form>
+            </div>
+            <div class="sign-up-page">
+              <form>
+                <!-- email -->
+                <input type="email" placeholder="Email"/>
+                <!-- password -->
+                <input type="password" placeholder="Password"/>
+                <!-- repeat-password -->
+                <input type="password" placeholder="Repeat Password"/>
+                <button>Sign Up</button>
+              </form>
+            </div>
+        </section>
+        <!-- circle -->
+        <div class="background-circle">
+        </div>
+    </main>
+    <!-- JQuery -->
+    <script src="js/Jquery.js"></script>
+    <script>
+      // For sign In 
+      $(document).on('click', '.sign-button', function(){
+        $('.sign-in').addClass('active-sign-in').siblings('.sign-in').removeClass('active-sign-up')
+      });
+        // For sign In 
+        $(document).on('click', '.new-button', function(){
+        $('.sign-in').addClass('active-sign-up').siblings('.sign-in').removeClass('active-sign-in')
+      });
+      // for going back
+      $(document).ready(function(){
+        $('.cancel a').click(function(){
+          $('.sign-in').removeClass('active-sign-in')
+        })
+      });
+      $(document).ready(function(){
+        $('.cancel a').click(function(){
+          $('.sign-in').removeClass('active-sign-up')
+        })
+      });
+    </script>
+</body>
+</html>
